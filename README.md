@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import forEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-for-each@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-for-each/tags). For example,
+
+```javascript
 import forEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-for-each@v0.1.0-esm/index.mjs';
 ```
 
@@ -199,7 +204,7 @@ var mean = context.sum / context.count;
 <script type="module">
 
 var isEven = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-even' ).isPrimitive;
-import forEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-for-each@v0.1.0-esm/index.mjs';
+import forEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-for-each@esm/index.mjs';
 
 function log( value, index, collection ) {
     console.log( '%s: %d', index, value );
